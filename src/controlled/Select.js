@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-export class Basic extends Component {
-  state = { value: "" };
+export class Select extends Component {
+  state = { value: "react" };
 
   handleChange = event => {
     this.setState({ value: event.target.value });
@@ -16,11 +16,11 @@ export class Basic extends Component {
     <React.Fragment>
       <form onSubmit={this.handleSubmit}>
         <label>
-          <input
-            type="text"
-            value={this.state.value}
-            onChange={this.handleChange}
-          />
+          <select value={this.state.value} onChange={this.handleChange}>
+            <option value="react">React</option>
+            <option value="angular">Angular</option>
+            <option value="vue.js">Vue.js</option>
+          </select>
         </label>
         <input type="submit" value="Submit" />
       </form>
