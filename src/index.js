@@ -1,17 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
-import Hello from "./Hello";
-
-const styles = {
-  fontFamily: "sans-serif",
-  textAlign: "center"
-};
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Controlled } from "./controlled";
 
 const App = () => (
-  <div style={styles}>
-    <Hello name="CodeSandbox" />
-    <h2>Start editing to see some magic happen {"\u2728"}</h2>
-  </div>
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" exact render={() => "Works!"} />
+      <Route path="/controlled" component={Controlled} />
+    </Switch>
+  </BrowserRouter>
 );
 
 render(<App />, document.getElementById("root"));
