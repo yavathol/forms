@@ -26,6 +26,9 @@ const App = () => (
                 <li>
                   <Link to="uncontrolled/text">Text</Link>
                 </li>
+                <li>
+                  <Link to="uncontrolled/file">File</Link>
+                </li>
               </ul>
             </li>
           </ul>
