@@ -38,8 +38,8 @@ const mapStateToProps = state => ({
     contactForm: state.contactForm
 });
 
-const mapDispatchToProps = dispatch => {
-    onChange: payload => dispatch(saveFormValue(payload));
-};
+const mapDispatchToProps = dispatch => ({
+    onChange: payload => dispatch(saveFormValue(payload))
+});
 
 export const ContactFormConnected = connect(mapStateToProps, mapDispatchToProps)(ContactForm);

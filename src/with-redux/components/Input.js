@@ -9,7 +9,7 @@ export class Input extends Component {
 
 
     componentDidMount() {
-        this.props.registerValidator(validators[this.props.validators[0]]);
+        // this.props.registerValidator(validators[this.props.validators[0]]);
 
     }
 
