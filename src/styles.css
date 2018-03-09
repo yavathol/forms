@@ -1,26 +1,29 @@
 html {
-    font-family: Verdana, sans-serif;
+  font-family: Verdana, sans-serif;
 }
 
 label {
-    display: block;
-    margin-bottom: 1em;
+  display: block;
+  margin-bottom: 1em;
 }
 
-input, textarea {
-    margin-top: 0.5em;
-    display: block;
+input,
+textarea {
+  margin-top: 0.5em;
+  display: block;
 }
 
-input ~ div {
-    color: red;
-    font-size: 0.8rem;
-    margin-top: 0.4em;
+input ~ div,
+textarea ~ div {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.4em;
 }
 
-button, input:not([type="file"]), textarea {
-    padding: 1em;
-    border-radius: 0.2em;
-    border: 1px lightgrey solid;
-
+button,
+input:not([type="file"]),
+textarea {
+  padding: 1em;
+  border-radius: 0.2em;
+  border: 1px lightgrey solid;
 }
