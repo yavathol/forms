@@ -1,22 +1,29 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 
+
 let ContactForm = props => {
     const { handleSubmit } = props
     return (
         <form onSubmit={handleSubmit}>
             <div>
-                <label htmlFor="firstName">First Name</label>
-                <Field name="firstName" component="input" type="text" />
+                <label htmlFor="name">Your name</label>
+                <Field name="name"placeholder="Type your name here" component="input" type="text" />
             </div>
             <div>
-                <label htmlFor="lastName">Last Name</label>
-                <Field name="lastName" component="input" type="text" />
+                <label htmlFor="email">E-mail</label>
+                <Field name="email" placeholder="Type your email here" component="input" type="email" />
             </div>
             <div>
-                <label htmlFor="email">Email</label>
-                <Field name="email" component="input" type="email" />
+                <label htmlFor="question">Question</label>
+                <Field name="name"placeholder="Type your question here" component="textarea"/>
             </div>
+            <div>
+                <label htmlFor="canContactByPhone">Can contact by phone number?</label>
+                <Field name="canContactByPhone" component="input" type="checkbox"/>
+            </div>
+            https://redux-form.com/7.3.0/examples/selectingformvalues/
+            <br/>
             <button type="submit">Submit</button>
         </form>
     )

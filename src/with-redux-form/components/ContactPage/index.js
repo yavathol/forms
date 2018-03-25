@@ -1,5 +1,5 @@
 import React from 'react'
-import Index from './ContactForm'
+import Index from './ContactForm/index'
 
 class ContactPage extends React.Component {
     submit = values => {
@@ -11,5 +11,5 @@ class ContactPage extends React.Component {
     }
 }
 
-export default ContactPage
+export {ContactPage}
 

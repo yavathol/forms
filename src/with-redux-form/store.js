@@ -1,5 +1,6 @@
-import { createStore, combineReducers } from 'redux'
+import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { reducer as formReducer } from 'redux-form'
+import logger from "redux-logger";
 
 const rootReducer = combineReducers({
     // ...your other reducers here
@@ -8,4 +9,6 @@ const rootReducer = combineReducers({
     form: formReducer
 })
 
-const store = createStore(rootReducer)
+const store = createStore(rootReducer, applyMiddleware(logger))
+
+export {store}
