@@ -6,7 +6,6 @@ import {store} from './store';
 
 const WithReduxForm = () => (
     <Provider store={store}>
-        {/*<div>dupa</div>*/}
         <ContactPage/>
     </Provider>
 );
